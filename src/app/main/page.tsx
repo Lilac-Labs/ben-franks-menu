@@ -1,10 +1,16 @@
+import Image from 'next/image';
+
 export default function Home() {
 	return (
-		<main className="flex h-screen w-full">
-			<iframe
-				src="/main.pdf"
-				className="w-full h-full"
-				style={{ border: 'none' }}
+		<main className="flex min-h-screen items-center justify-center">
+			<Image
+				src="/main.png"
+				alt="main"
+				width={0}
+				height={0}
+				sizes="100vw"
+				style={{ width: 'auto', height: 'auto' }}
+				priority
 			/>
 		</main>
 	);
